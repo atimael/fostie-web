@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Enable dark mode based on system preference */
+  --default-color-scheme: light dark;
+
+  /* Custom dark background color */
+  --color-custom-dark: #1a1a1a;
+}

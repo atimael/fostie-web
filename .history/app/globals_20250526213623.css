@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Enable dark mode based on system preference */
+  --default-color-scheme: light dark;
+
+  /* Custom dark background color */
+  --color-custom-dark: #1a1a1a;
+
+  /* Custom font family */
+  --font-family-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
