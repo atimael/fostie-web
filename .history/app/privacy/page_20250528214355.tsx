@@ -2,9 +2,9 @@ export default function Privacy() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <main className="min-h-screen bg-custom-dark">
+    <main className="min-h-screen bg-gray-50 dark:bg-custom-dark">
       <div className="max-w-4xl mx-auto px-6 py-12">
-        <div className="bg-orange-50/5 rounded-lg shadow-md p-8">
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
             Privacy Policy
           </h1>
@@ -57,7 +57,7 @@ export default function Privacy() {
               <div className="space-y-4">
                 <a
                   href="mailto:hello@fostie.com"
-                  className="relative whitespace-nowrap text-orange-50 
+                  className="relative whitespace-nowrap 
                 font-medium outline-none 
                 transition duration-200 after:pointer-events-none 
                 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:rounded-[0.125rem]

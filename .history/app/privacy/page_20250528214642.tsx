@@ -2,9 +2,9 @@ export default function Privacy() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <main className="min-h-screen bg-custom-dark">
+    <main className="min-h-screen bg-orange-50/5">
       <div className="max-w-4xl mx-auto px-6 py-12">
-        <div className="bg-orange-50/5 rounded-lg shadow-md p-8">
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
             Privacy Policy
           </h1>
