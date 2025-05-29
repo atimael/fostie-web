@@ -3,10 +3,10 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Fostie - Simple Time Tracker",
+  title: "Fostie - macOS App",
   description: "Official website for Fostie macOS application",
-  keywords: "Fostie, Simple Time Tracker, macOS, app, application",
-  authors: [{ name: "Fostie" }],
+  keywords: "Fostie, macOS, app, application",
+  authors: [{ name: "Fostie Team" }],
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
