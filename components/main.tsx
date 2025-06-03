@@ -9,7 +9,7 @@ export default function Main() {
 
           <div className="space-y-4">
             <a
-              href="mailto:hello@fostie.com"
+              href="mailto:hello@fostie.app"
               className="relative whitespace-nowrap 
                 font-medium outline-none 
                 transition duration-200 after:pointer-events-none 
