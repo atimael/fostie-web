@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header className="transition-shadows fixed top-0 z-40 flex w-full justify-between px-8 py-5  outline-1 outline-stone-200/0 backdrop-blur-xl duration-300 sm:py-7">
-      <div className="delay-75">
+      <div className="motion-preset-blur-right motion-delay-100">
         <svg
           width="300"
           height="80"
@@ -73,7 +73,7 @@ export default function Header() {
           </text>
         </svg>
       </div>
-      <div className="flex items-center gap-4 delay-75">
+      <div className="flex items-center gap-4 motion-preset-blur-left motion-delay-100">
         <a
           href="https://apps.apple.com/app/fostie-simple-time-tracker/id6744296361"
           rel="noopener noreferrer"

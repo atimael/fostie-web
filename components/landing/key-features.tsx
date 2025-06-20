@@ -1,14 +1,18 @@
+import { cn } from "@/app/utils/cn";
+
 const KeyFeatureSection = ({
   featureText,
   desc,
   icon,
+  className,
 }: {
   featureText: string;
   desc: string;
   icon: React.ReactNode;
+  className?: string;
 }) => {
   return (
-    <section className="flex items-center gap-4 w-full">
+    <section className={cn("flex items-center gap-4 w-full", className)}>
       {icon}
       <div>
         <h3 className="text-xl font-medium">{featureText}</h3>
@@ -206,12 +210,19 @@ const keyFeatures = [
 export const KeyFeatures = () => {
   return (
     <div className="flex flex-col items-center gap-8 justify-start p-8">
-      {keyFeatures.map((feature) => (
+      {keyFeatures.map((feature, index) => (
         <KeyFeatureSection
           key={feature.featureText}
           featureText={feature.featureText}
           desc={feature.desc}
           icon={feature.icon}
+          className={cn(
+            "motion-preset-blur-down",
+            index === 0 && "motion-delay-1250",
+            index === 1 && "motion-delay-1350",
+            index === 2 && "motion-delay-1450",
+            index === 3 && "motion-delay-1550"
+          )}
         />
       ))}
     </div>

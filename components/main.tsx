@@ -49,12 +49,12 @@ export default function Main() {
             transform: `translateY(-${parallax / 5}px)`,
           }}
         >
-          <h1 className="text-7xl font-bold text-orange-50 tracking-tight max-w-3xl mx-auto delay-500 leading-18">
+          <h1 className="text-7xl font-bold text-orange-50 tracking-tight max-w-3xl mx-auto motion-preset-blur-down motion-delay-500 leading-18">
             Your focus companion for deep work
           </h1>
         </section>
 
-        <section className="flex w-full mb-24 flex-col items-center delay-[900ms]">
+        <section className="flex w-full mb-24 flex-col items-center motion-preset-blur-up motion-delay-1000">
           <div className="relative h-full w-full sm:aspect-[1.95/1]">
             <div
               className="absolute left-24 justify-between right-24 top-8 z-10 flex h-12 items-center rounded-[1.25rem] bg-orange-50/5 pl-3 pr-5 text-orange-50 backdrop-blur-xl"
