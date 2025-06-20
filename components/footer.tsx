@@ -2,7 +2,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-6 px-6 flex items-center justify-center">
+    <footer className="py-6 px-6 flex items-center relative flex-col justify-center">
       <div className="flex items-center justify-between">
         <a
           className="group inline-flex items-center outline-none transition duration-300 focus:ring-2 focus:ring-pink-300 bg-orange-50/5 hover:bg-orange-50/5 rounded-xl p-2 text-orange-50 hover:text-orange-50"
@@ -22,6 +22,9 @@ export default function Footer() {
             <path d="M8.44486 3H3.2002L15.5685 21H20.8131L8.44486 3ZM5.31391 4.16971H7.70053L18.6861 19.8835H16.2995L5.31391 4.16971Z"></path>
           </svg>
         </a>
+      </div>
+      <div className="pointer-events-none -mt-6 hidden select-none overflow-hidden bg-gradient-to-b from-25% bg-clip-text text-[14rem] font-black leading-none text-transparent sm:block sm:h-36 md:h-48 md:text-[18rem] lg:h-60 lg:text-[22rem] from-orange-50/20 to-orange-50/0">
+        Fostie
       </div>
     </footer>
   );
