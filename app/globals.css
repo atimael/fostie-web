@@ -2,6 +2,7 @@
 @plugin "tailwindcss-motion";
 
 @custom-variant dark (&:where(.dark, .dark *));
+@custom-variant support-page (&:where(.support-page, .support-page *));
 
 @theme {
   /* Enable dark mode based on system preference */
@@ -18,22 +19,4 @@
 
 body {
   @apply bg-custom-dark;
-}
-
-@keyframes meteor-effect {
-  0% {
-    transform: translate(0, 0) rotate(45deg);
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.4;
-  }
-  100% {
-    transform: translate(600px, 600px) rotate(45deg);
-    opacity: 0;
-  }
-}
-
-.animate-meteor-effect {
-  animation: meteor-effect linear forwards;
 }

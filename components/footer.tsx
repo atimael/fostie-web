@@ -1,11 +1,11 @@
-export default function Footer() {
-  const currentYear = new Date().getFullYear();
-
+export default function Footer({ className }: { className?: string }) {
   return (
-    <footer className="pt-6 px-6 flex items-center relative flex-col justify-center">
+    <footer
+      className={`pt-6 px-6 flex items-center relative flex-col justify-center ${className}`}
+    >
       <div className="flex items-center justify-between">
         <a
-          className="group motion-preset-blur-down motion-delay-1650 inline-flex items-center outline-none transition duration-300 focus:ring-2 focus:ring-pink-300 bg-orange-50/5 hover:bg-orange-50/5 rounded-xl p-2 text-orange-50 hover:text-orange-50"
+          className="group motion-preset-blur-down motion-delay-1650 support-page:motion-delay-350 inline-flex items-center outline-none transition duration-300 focus:ring-2 focus:ring-pink-300 bg-orange-50/5 hover:bg-orange-50/5 rounded-xl p-2 text-orange-50 hover:text-orange-50"
           href="https://x.com/atimaeldev"
           rel="noopener noreferrer"
           target="_blank"
@@ -23,7 +23,7 @@ export default function Footer() {
           </svg>
         </a>
       </div>
-      <div className="pointer-events-none motion-preset-blur-down motion-delay-1750 -mt-6 hidden select-none overflow-hidden bg-gradient-to-b from-25% bg-clip-text text-[14rem] font-black leading-none text-transparent sm:block sm:h-36 md:h-48 md:text-[18rem] lg:h-60 lg:text-[22rem] from-orange-50/10 to-orange-50/0">
+      <div className="pointer-events-none motion-preset-blur-down motion-delay-1750 support-page:motion-delay-350 -mt-6 hidden select-none overflow-hidden bg-gradient-to-b from-25% bg-clip-text text-[14rem] font-black leading-none text-transparent sm:block sm:h-36 md:h-48 md:text-[18rem] lg:h-60 lg:text-[22rem] from-orange-50/10 to-orange-50/0">
         Fostie
       </div>
     </footer>

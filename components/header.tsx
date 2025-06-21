@@ -1,79 +1,83 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
     <header className="transition-shadows fixed top-0 z-40 flex w-full justify-between px-8 py-5  outline-1 outline-stone-200/0 backdrop-blur-xl duration-300 sm:py-7">
-      <div className="motion-preset-blur-right motion-delay-100">
-        <svg
-          width="300"
-          height="80"
-          viewBox="0 0 300 80"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <text
-            x="10"
-            y="50"
-            className="text-4xl font-bold tracking-tighter fill-orange-50"
+      <div className="motion-preset-blur-right motion-delay-100 text-orange-50">
+        <Link href="/">
+          <svg
+            width="300"
+            height="80"
+            viewBox="0 0 300 80"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            F
-          </text>
+            <text
+              x="10"
+              y="50"
+              className="text-4xl font-bold tracking-tighter fill-orange-50"
+            >
+              F
+            </text>
 
-          <g transform="translate(27, 21) scale(1.2)">
-            <circle
-              cx="14"
-              cy="15"
-              r="9"
-              fill="none"
-              stroke="white"
-              strokeWidth="3"
-            />
-            <circle cx="14" cy="15" r="1.5" fill="black" />
-            <line
-              x1="14"
-              y1="15"
-              x2="14"
-              y2="9"
-              stroke="white"
-              strokeWidth="2"
-              strokeLinecap="round"
-            />
-            <line
-              x1="14"
-              y1="15"
-              x2="18"
-              y2="15"
-              stroke="white"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-            />
-            <rect
-              x="12.5"
-              y="4"
-              width="3"
-              height="2"
-              rx="0.5"
-              fill="none"
-              stroke="white"
-              strokeWidth="1.5"
-            />
-            <circle
-              cx="21"
-              cy="7"
-              r="1"
-              fill="none"
-              stroke="white"
-              strokeWidth="1.5"
-            />
-          </g>
+            <g transform="translate(27, 21) scale(1.2)">
+              <circle
+                cx="14"
+                cy="15"
+                r="9"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="3"
+              />
+              <circle cx="14" cy="15" r="1.5" fill="black" />
+              <line
+                x1="14"
+                y1="15"
+                x2="14"
+                y2="9"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+              <line
+                x1="14"
+                y1="15"
+                x2="18"
+                y2="15"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
+              <rect
+                x="12.5"
+                y="4"
+                width="3"
+                height="2"
+                rx="0.5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
+              <circle
+                cx="21"
+                cy="7"
+                r="1"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
+            </g>
 
-          <text
-            x="57"
-            y="50"
-            className="text-4xl font-bold tracking-tighter fill-orange-50"
-          >
-            stie
-          </text>
-        </svg>
+            <text
+              x="57"
+              y="50"
+              className="text-4xl font-bold tracking-tighter fill-orange-50"
+            >
+              stie
+            </text>
+          </svg>
+        </Link>
       </div>
-      <div className="flex items-center gap-4 motion-preset-blur-left motion-delay-100">
+      <div className="flex items-center gap-4 motion-preset-blur-left motion-delay-100 text-orange-50">
         <a
           href="https://apps.apple.com/app/fostie-simple-time-tracker/id6744296361"
           rel="noopener noreferrer"

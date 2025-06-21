@@ -1,15 +1,18 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-import Main from "@/components/main";
 
-export default function Home() {
+export default function TermsLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <>
       <Header />
       <main className="flex w-full flex-1 justify-center px-12 pb-16 pt-32 sm:pb-28 sm:pt-48 xl:px-40">
-        <Main />
+        {children}
       </main>
-      <Footer />
+      <Footer className="support-page" />
     </>
   );
 }
