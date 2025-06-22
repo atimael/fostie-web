@@ -8,6 +8,8 @@
   /* Enable dark mode based on system preference */
   --default-color-scheme: light dark;
 
+  --breakpoint-xs: 30rem;
+
   /* Custom dark background color */
   --color-custom-dark: #1a1a1a;
 

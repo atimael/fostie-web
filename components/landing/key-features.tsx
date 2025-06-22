@@ -12,9 +12,14 @@ const KeyFeatureSection = ({
   className?: string;
 }) => {
   return (
-    <section className={cn("flex items-center gap-4 w-full", className)}>
+    <section
+      className={cn(
+        "flex w-full flex-col items-center gap-4 sm:flex-row",
+        className
+      )}
+    >
       {icon}
-      <div>
+      <div className="text-center sm:text-left">
         <h3 className="text-xl font-medium">{featureText}</h3>
         <p className="text-sm text-gray-500">{desc}</p>
       </div>
@@ -24,7 +29,7 @@ const KeyFeatureSection = ({
 
 const QuickActions = () => {
   return (
-    <div className=" w-32 h-32 items-center justify-center">
+    <div className="h-32 w-32 shrink-0 items-center justify-center">
       <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M16 4 L8 16 L12 16 L12 24 L20 12 L16 12 Z"
@@ -37,7 +42,7 @@ const QuickActions = () => {
 
 const VisualProgress = () => {
   return (
-    <div className=" w-32 h-32 items-center justify-center">
+    <div className="h-32 w-32 shrink-0 items-center justify-center">
       <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
         <circle
           cx="16"
@@ -68,7 +73,7 @@ const VisualProgress = () => {
 
 const MultipleTimers = () => {
   return (
-    <div className=" w-32 h-32 items-center justify-center">
+    <div className="h-32 w-32 shrink-0 items-center justify-center">
       <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
         <circle
           cx="14"
@@ -123,7 +128,7 @@ const MultipleTimers = () => {
 
 const MenubarApplication = () => {
   return (
-    <div className=" w-32 h-32 items-center justify-center">
+    <div className="h-32 w-32 shrink-0 items-center justify-center">
       <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
         <rect
           x="3"
@@ -209,7 +214,7 @@ const keyFeatures = [
 
 export const KeyFeatures = () => {
   return (
-    <div className="flex flex-col items-center gap-8 justify-start p-8">
+    <div className="flex flex-col items-center justify-start gap-8 p-8">
       {keyFeatures.map((feature, index) => (
         <KeyFeatureSection
           key={feature.featureText}

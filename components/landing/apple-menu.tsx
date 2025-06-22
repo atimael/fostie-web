@@ -11,7 +11,7 @@ export const AppleMenu = ({
   return (
     <div
       className={cn(
-        "group rounded-2xl px-3 py-3 shadow-2xl shadow-stone-800 backdrop-blur-2xl border-opacity-30 bg-orange-50/5 absolute left-18 top-24 z-10 hidden w-72 sm:block xl:-right-9",
+        "group rounded-2xl px-3 py-3 shadow-2xl shadow-stone-800 backdrop-blur-2xl border-opacity-30 bg-orange-50/5 absolute left-18 top-24 z-10 w-72 block xl:-right-9",
         className
       )}
       style={style}

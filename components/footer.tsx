@@ -1,7 +1,9 @@
+import { cn } from "@/app/utils/cn";
+
 export default function Footer({ className }: { className?: string }) {
   return (
     <footer
-      className={`pt-6 px-6 flex items-center relative flex-col justify-center ${className}`}
+      className={`pt-6 px-6 pb-16 sm:pb-0 flex items-center relative flex-col justify-center ${className}`}
     >
       <div className="flex items-center justify-between">
         <a
@@ -23,7 +25,11 @@ export default function Footer({ className }: { className?: string }) {
           </svg>
         </a>
       </div>
-      <div className="pointer-events-none motion-preset-blur-down motion-delay-1750 support-page:motion-delay-350 -mt-6 hidden select-none overflow-hidden bg-gradient-to-b from-25% bg-clip-text text-[14rem] font-black leading-none text-transparent sm:block sm:h-36 md:h-48 md:text-[18rem] lg:h-60 lg:text-[22rem] from-orange-50/10 to-orange-50/0">
+      <div
+        className={cn(
+          "pointer-events-none motion-preset-blur-down motion-delay-1750 support-page:motion-delay-350 -mt-6 hidden select-none overflow-hidden bg-gradient-to-b from-25% bg-clip-text font-black leading-none text-transparent sm:block sm:h-38 md:h-48 md:text-[12rem] text-[8rem] sm:text-[10rem] lg:h-80 lg:text-[22rem] from-orange-50/10 to-orange-50/0"
+        )}
+      >
         Fostie
       </div>
     </footer>

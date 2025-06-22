@@ -24,38 +24,6 @@ export default function Privacy() {
             not have access to any information you input or generate while using
             the application.
           </p>
-          <h2 className="text-xl font-semibold text-orange-50 mb-4">
-            Data Storage
-          </h2>
-          <p className="text-gray-700 dark:text-gray-300 mb-4">
-            All data processed by Fostie remains locally on your device. We do
-            not have access to any information you input or generate while using
-            the application.
-          </p>
-          <h2 className="text-xl font-semibold text-orange-50 mb-4">
-            Data Storage
-          </h2>
-          <p className="text-gray-700 dark:text-gray-300 mb-4">
-            All data processed by Fostie remains locally on your device. We do
-            not have access to any information you input or generate while using
-            the application.
-          </p>
-          <h2 className="text-xl font-semibold text-orange-50 mb-4">
-            Data Storage
-          </h2>
-          <p className="text-gray-700 dark:text-gray-300 mb-4">
-            All data processed by Fostie remains locally on your device. We do
-            not have access to any information you input or generate while using
-            the application.
-          </p>
-          <h2 className="text-xl font-semibold text-orange-50 mb-4">
-            Data Storage
-          </h2>
-          <p className="text-gray-700 dark:text-gray-300 mb-4">
-            All data processed by Fostie remains locally on your device. We do
-            not have access to any information you input or generate while using
-            the application.
-          </p>
         </section>
 
         <section className="mb-8">

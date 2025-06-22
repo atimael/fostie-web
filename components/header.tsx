@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="transition-shadows fixed top-0 z-40 flex w-full justify-between px-8 py-5  outline-1 outline-stone-200/0 backdrop-blur-xl duration-300 sm:py-7">
+    <header className="transition-shadows fixed top-0 z-40 flex w-full justify-between px-8 py-5 outline-1 outline-stone-200/0 backdrop-blur-xl duration-300 sm:py-7">
       <div className="motion-preset-blur-right motion-delay-100 text-orange-50">
         <Link href="/">
           <svg
@@ -14,7 +14,7 @@ export default function Header() {
             <text
               x="10"
               y="50"
-              className="text-4xl font-bold tracking-tighter fill-orange-50"
+              className="fill-orange-50 text-4xl font-bold tracking-tighter"
             >
               F
             </text>
@@ -70,23 +70,23 @@ export default function Header() {
             <text
               x="57"
               y="50"
-              className="text-4xl font-bold tracking-tighter fill-orange-50"
+              className="fill-orange-50 text-4xl font-bold tracking-tighter"
             >
               stie
             </text>
           </svg>
         </Link>
       </div>
-      <div className="flex items-center gap-4 motion-preset-blur-left motion-delay-100 text-orange-50">
+      <div className="motion-preset-blur-left motion-delay-100 hidden items-center gap-4 text-orange-50 sm:flex">
         <a
           href="https://apps.apple.com/app/fostie-simple-time-tracker/id6744296361"
           rel="noopener noreferrer"
           target="_blank"
-          className="flex items-center gap-2 hover:cursor-pointer bg-orange-50/5 px-5 py-4 rounded-2xl group"
+          className="group flex items-center gap-2 rounded-2xl bg-orange-50/5 px-5 py-4 hover:cursor-pointer"
         >
           <div>
             <svg
-              className="h-6 w-6 fill-current group-hover:scale-125 transition-all"
+              className="h-6 w-6 fill-current transition-all group-hover:scale-125"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               aria-hidden="true"
